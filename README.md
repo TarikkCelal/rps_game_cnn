@@ -10,18 +10,6 @@ An interactive Rock Paper Scissors game powered by a Convolutional Neural Networ
 * **Random computer choice** with representative images.
 * **Easy restart functionality**.
 
-## 📁 Folder Structure
-
-
-project/
-├── rps_cnn_model.h5          # Trained CNN model
-├── rps_webcam_dataset_resized/  # Folder containing images for computer's move
-│   ├── Rock/
-│   ├── Paper/
-│   └── Scissors/
-├── main.py                   # Main game script
-└── README.md                 # This file
-
 
 ## 🛠️ Requirements
 
@@ -34,19 +22,20 @@ project/
 
 ```bash
 pip install opencv-python tensorflow numpy
+```
 
-🧠 Model
+## 🧠 Model
 The CNN model (rps_cnn_model.h5) is trained on a custom webcam dataset with the following classes:
 
-Rock
+* Rock
 
-Paper
+* Paper
 
-Scissors
+* Scissors
 
-Important: Ensure your model's input dimensions match the webcam frame size used during prediction.
+**Important: Ensure your model's input dimensions match the webcam frame size used during prediction.**
 
-🚀 How to Run
+## 🚀 How to Run
 Ensure your webcam is connected.
 
 Place the trained model (rps_cnn_model.h5) in the project directory.
@@ -57,14 +46,14 @@ Run the game:
 
 python main.py
 
-🕹️ Game Controls
+## 🕹️ Game Controls
 Spacebar: Start the countdown and make your move.
 
 R: Restart the game after a winner is determined.
 
 Q: Quit the game.
 
-👀 Game Interface
+## 👀 Game Interface
 The game screen is divided into two panels:
 
 Left panel: Displays your webcam feed.
