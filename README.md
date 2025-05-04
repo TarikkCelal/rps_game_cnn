@@ -1,47 +1,42 @@
-🖖 Rock Paper Scissors AI Game
-This is an interactive computer vision-based Rock-Paper-Scissors game powered by a Convolutional Neural Network (CNN) trained on webcam images. The game uses your webcam to detect your hand gesture (rock, paper, or scissors) and plays against the computer. First to 3 points wins!
+# 🖖 Rock Paper Scissors AI Game
 
-🎮 Features
-Real-time hand gesture recognition using a trained CNN.
+An interactive Rock Paper Scissors game powered by a Convolutional Neural Network (CNN) trained on webcam images. Play against the computer using real-time hand gesture recognition! First to 3 points wins.
 
-Countdown timer before prediction.
+## 🎮 Features
 
-Visual scoreboard and results display.
+* **Real-time hand gesture recognition** using a trained CNN.
+* **Countdown timer** before prediction.
+* **Visual scoreboard** and results display.
+* **Random computer choice** with representative images.
+* **Easy restart functionality**.
 
-Random computer choice with representative images.
+## 📁 Folder Structure
 
-Easy restart functionality.
 
-📁 Folder Structure
-bash
-Copy
-Edit
 project/
-│
-├── rps_cnn_model.h5                     # Trained CNN model
-├── rps_webcam_dataset_resized/         # Folder containing images for computer choice
+├── rps_cnn_model.h5          # Trained CNN model
+├── rps_webcam_dataset_resized/  # Folder containing images for computer's move
 │   ├── Rock/
 │   ├── Paper/
 │   └── Scissors/
-├── main.py                              # Main game script
-└── README.md                            # This file
-🛠 Requirements
-Python 3.x
+├── main.py                   # Main game script
+└── README.md                 # This file
 
-OpenCV
 
-TensorFlow / Keras
+## 🛠️ Requirements
 
-NumPy
+* Python 3.x
+* OpenCV
+* TensorFlow / Keras
+* NumPy
 
-Install dependencies:
+**Installation**
 
-bash
-Copy
-Edit
+```bash
 pip install opencv-python tensorflow numpy
+
 🧠 Model
-The CNN model (rps_cnn_model.h5) was trained on a custom webcam dataset with three classes:
+The CNN model (rps_cnn_model.h5) is trained on a custom webcam dataset with the following classes:
 
 Rock
 
@@ -49,32 +44,29 @@ Paper
 
 Scissors
 
-Ensure that your model input dimensions match your webcam frame size used in prediction.
+Important: Ensure your model's input dimensions match the webcam frame size used during prediction.
 
 🚀 How to Run
 Ensure your webcam is connected.
 
-Place your trained model (rps_cnn_model.h5) in the project directory.
+Place the trained model (rps_cnn_model.h5) in the project directory.
 
-Place your computer move images in the respective folders under rps_webcam_dataset_resized/.
+Place the computer's move images in the respective folders under rps_webcam_dataset_resized/.
 
 Run the game:
 
-bash
-Copy
-Edit
 python main.py
-Press Space to start the countdown and make your move.
 
-Press R to restart when someone wins.
+🕹️ Game Controls
+Spacebar: Start the countdown and make your move.
 
-Press Q to quit the game.
+R: Restart the game after a winner is determined.
 
-👀 Example
-The screen is divided into:
+Q: Quit the game.
 
-Left panel: Your webcam feed.
+👀 Game Interface
+The game screen is divided into two panels:
 
-Right panel: The computer's move.
+Left panel: Displays your webcam feed.
 
-Score and round results shown at the top.
+Right panel: Displays
