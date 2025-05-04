@@ -25,6 +25,9 @@ pip install opencv-python tensorflow numpy
 ```
 
 ## 🧠 Model
+The dataset was created using the dataset_creator.py script.
+Link to dataset on Kaggle: https://www.kaggle.com/datasets/takocelo/rock-paper-scissors-dataest
+
 The CNN model (rps_cnn_model.h5) is trained on a custom webcam dataset with the following classes:
 
 * Rock
